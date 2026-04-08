@@ -1,10 +1,18 @@
 # AGENTS.md
 
+## Project Overview
+
+Simple grade calculator for EPN (Escuela Politécnica Nacional). Pure HTML/CSS/JS - no build tools required.
+
 ## Repository Structure
 
-- `api/` - Backend API (empty, pending implementation)
-- `front/` - Frontend application (empty, pending implementation)
+- `front/` - Frontend application (open `index.html` in browser)
+  - `index.html` - Main page
+  - `styles.css` - Styles
+  - `script.js` - Calculator logic
+  - `fondo.jpg` - Background image
+- `api/` - Does not exist (no backend planned)
 
-## Current Status
+## Running
 
-This is a new project. No build/test/lint commands are configured yet.
+Open `front/index.html` directly in a browser. No server, build, or dependencies needed.
