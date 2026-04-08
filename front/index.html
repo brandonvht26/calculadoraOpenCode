@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas - EPN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Notas EPN</h1>
+        <p class="subtitle">Verifica si pasas la materia</p>
+
+        <div class="info-box">
+            <p><strong>Nota máxima:</strong> 40 puntos</p>
+            <p><strong>Aprobar directo:</strong> >= 28</p>
+            <p><strong>Mínimo para supletorio:</strong> >= 18</p>
+            <p><strong>Supletorio:</strong> (nota + supletorio) / 2 >= 28</p>
+        </div>
+
+        <div class="input-group">
+            <label for="notaSemestre">Nota del semestre (0-40):</label>
+            <input type="number" id="notaSemestre" min="0" max="40" step="0.1" placeholder="Ej: 22">
+        </div>
+
+        <div class="supletorio-section" id="supletorioSection">
+            <label for="notaSupletorio">Nota del supletorio (0-40):</label>
+            <input type="number" id="notaSupletorio" min="0" max="40" step="0.1" placeholder="Ej: 35">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
